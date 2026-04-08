@@ -1,0 +1,35 @@
+{
+    "name": "하크루 - 학원 통합 관리",
+    "short_name": "하크루",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#4F46E5",
+    "theme_color": "#4F46E5",
+    "description": "학원 원장·선생님·학부모를 하나로 잇는 통합 관리 앱",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
