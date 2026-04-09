@@ -19,6 +19,7 @@
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="하크루(Hakrew) - 학원 원장·선생님·학부모를 하나로 잇는 통합 관리 SaaS. 운영: h2tech (사업자번호 107-34-20995)">
+  <meta name="theme-color" content="#0B0D13">
   <meta name="author" content="h2tech">
   <meta name="publisher" content="h2tech (사업자등록번호 107-34-20995)">
   <meta name="keywords" content="하크루, Hakrew, 학원관리, 학원 SaaS, h2tech, 카카오 알림톡, 출결 관리">
@@ -36,7 +37,8 @@
   <meta name="apple-mobile-web-app-title" content="하크루">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <!-- Favicon -->
+  <!-- SVG Favicon (brand gradient) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236366F1'/%3E%3Cstop offset='50%25' stop-color='%238B5CF6'/%3E%3Cstop offset='100%25' stop-color='%23EC4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Cpath d='M20 18v28M20 32h24M44 18v28' stroke='white' stroke-width='5' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
   <link rel="icon" type="image/png" href="favicon.png"/>
 
   <title>하크루 (Hakrew) - h2tech이 운영하는 학원 통합 관리 SaaS</title>
@@ -65,16 +67,59 @@
 
   <!-- 사업자-채널 연관성 증빙 링크 (카카오 심사자 전용) -->
   <link rel="author" href="business.html">
+
+  <style>
+    html, body { background-color: #0F172A; margin: 0; padding: 0; }
+    #flutter-loading {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 50%, #312E81 100%);
+      z-index: 9999;
+    }
+    #flutter-loading .logo {
+      width: 84px;
+      height: 84px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #6366F1, #8B5CF6, #EC4899);
+      box-shadow: 0 10px 50px rgba(139, 92, 246, 0.55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 900;
+      font-size: 34px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      animation: pulse 1.6s ease-in-out infinite;
+    }
+    #flutter-loading .brand {
+      position: absolute;
+      bottom: 20%;
+      color: rgba(255,255,255,0.6);
+      font-size: 12px;
+      font-weight: 700;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      letter-spacing: 1px;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.08); opacity: 0.85; }
+    }
+  </style>
 </head>
 <body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
-
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
+  <div id="flutter-loading">
+    <div class="logo">H</div>
+    <div class="brand">HAKREW · by h2tech</div>
+  </div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var el = document.getElementById('flutter-loading');
+      if (el) el.remove();
+    });
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
