@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>하크루 (Hakrew) · 개인정보처리방침</title>
+  <meta name="description" content="하크루 학원 관리 서비스의 개인정보처리방침. h2tech이 수집·이용·보관하는 개인정보 항목과 보호 조치를 안내합니다.">
+  <meta name="author" content="h2tech">
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --text: #1F2937;
+      --text-secondary: #6B7280;
+      --text-disabled: #9CA3AF;
+      --border: #E5E7EB;
+      --bg: #F9FAFB;
+      --surface: #FFFFFF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 72px;
+      background: var(--primary);
+      border-radius: 18px;
+      color: white;
+      font-size: 32px;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 26px; font-weight: 900; margin-bottom: 8px; }
+    header .subtitle { color: var(--text-secondary); font-size: 14px; }
+    .meta {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    .meta strong { color: var(--text); }
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 16px 0 8px;
+    }
+    p, li { font-size: 14px; color: var(--text); }
+    ul { padding-left: 20px; margin: 8px 0; }
+    li { margin-bottom: 4px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 13px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: var(--bg); font-weight: 700; }
+    footer {
+      text-align: center;
+      color: var(--text-disabled);
+      font-size: 12px;
+      margin-top: 40px;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">H</div>
+      <h1>개인정보처리방침</h1>
+      <div class="subtitle">하크루 (Hakrew) · 학원 관리 SaaS</div>
+    </header>
+
+    <div class="meta">
+      <strong>시행일자</strong>: 2026년 4월 14일<br>
+      <strong>최종 개정일</strong>: 2026년 4월 14일<br>
+      <strong>운영 주체</strong>: h2tech (사업자번호 107-34-20995)
+    </div>
+
+    <section>
+      <h2>1. 총칙</h2>
+      <p>h2tech(이하 "회사")이 운영하는 하크루(Hakrew, 이하 "서비스")는 이용자의 개인정보를 중요시하며, 「개인정보 보호법」 및 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」을 준수하고 있습니다.</p>
+      <p>본 방침은 서비스 이용 시 수집되는 개인정보의 처리 목적, 항목, 보관 기간 등을 안내하며, 변경 시 공지사항 또는 본 페이지를 통해 고지합니다.</p>
+    </section>
+
+    <section>
+      <h2>2. 수집하는 개인정보 항목</h2>
+      <table>
+        <thead>
+          <tr><th>대상</th><th>수집 항목</th><th>수집 방법</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>원장·선생님 (계정 사용자)</td>
+            <td>이메일, 이름, 휴대전화번호, 비밀번호(암호화 저장), 프로필 사진(선택)</td>
+            <td>회원가입, 프로필 수정</td>
+          </tr>
+          <tr>
+            <td>학원</td>
+            <td>학원명, 대표 과목, 주소(선택), 대표 연락처</td>
+            <td>학원 생성 시 입력</td>
+          </tr>
+          <tr>
+            <td>학생</td>
+            <td>이름, 학년, 학교, 생년월일, 연락처, 주소, 메모</td>
+            <td>원장·선생님이 직접 입력</td>
+          </tr>
+          <tr>
+            <td>학부모</td>
+            <td>이름, 관계, 휴대전화번호(알림톡 수신용), 카카오 알림톡 수신 동의 여부</td>
+            <td>원장·선생님이 직접 입력</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin-top: 12px; color: var(--text-secondary); font-size: 13px;">※ 학부모는 별도의 앱 계정을 만들지 않으며, 본인의 자녀에 대한 알림 수신 목적으로만 휴대전화번호가 사용됩니다.</p>
+    </section>
+
+    <section>
+      <h2>3. 자동으로 수집되는 정보</h2>
+      <ul>
+        <li>접속 IP 주소, 쿠키, 접속 일시, 서비스 이용 기록(보안 및 통계 목적)</li>
+        <li>기기 정보: OS 버전, 기기 모델, 앱 버전(오류 진단 목적)</li>
+        <li>광고 식별자(ADID/IDFA): 무료 플랜의 광고 표시 목적에 한해 수집</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. 개인정보 수집 및 이용 목적</h2>
+      <ul>
+        <li>회원 식별, 로그인 및 계정 관리</li>
+        <li>학원 운영 기능 제공: 학생 관리, 출결 기록, 수강료 청구, 공지 발송</li>
+        <li>학부모 대상 카카오 알림톡 발송 (출결·납부 안내 등)</li>
+        <li>고객 문의 응대 및 서비스 개선</li>
+        <li>법령 및 약관 위반자에 대한 이용 제한 조치</li>
+        <li>무료 플랜에서 광고 표시 (Google AdMob)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. 개인정보의 보유 및 이용 기간</h2>
+      <table>
+        <thead>
+          <tr><th>항목</th><th>보유 기간</th><th>근거</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>회원 계정 정보</td><td>회원 탈퇴 시까지</td><td>서비스 제공</td></tr>
+          <tr><td>학생·학부모 정보</td><td>학원 측에서 삭제 시 또는 학원 탈퇴 시까지</td><td>학원 운영</td></tr>
+          <tr><td>출결·수강료 기록</td><td>5년</td><td>상법</td></tr>
+          <tr><td>접속 로그·IP</td><td>3개월</td><td>통신비밀보호법</td></tr>
+          <tr><td>부정 이용 기록</td><td>1년</td><td>서비스 보호</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>6. 개인정보의 제3자 제공</h2>
+      <p>회사는 원칙적으로 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만 아래의 경우는 예외로 합니다:</p>
+      <ul>
+        <li>이용자가 사전에 동의한 경우</li>
+        <li>법령의 규정에 따르거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. 개인정보 처리의 위탁</h2>
+      <p>회사는 서비스 제공을 위해 아래 업체에 개인정보 처리를 위탁하고 있습니다:</p>
+      <table>
+        <thead>
+          <tr><th>수탁자</th><th>위탁 업무</th><th>위탁 항목</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Supabase, Inc.</td>
+            <td>클라우드 데이터베이스 및 인증</td>
+            <td>계정·서비스 이용 데이터 전반</td>
+          </tr>
+          <tr>
+            <td>(주)스마트에스엠에스 (알리고)</td>
+            <td>카카오 알림톡 발송 대행</td>
+            <td>학부모 휴대전화번호, 알림 본문</td>
+          </tr>
+          <tr>
+            <td>Google LLC</td>
+            <td>광고(AdMob), 푸시 알림(FCM)</td>
+            <td>광고 식별자, 기기 토큰</td>
+          </tr>
+          <tr>
+            <td>Kakao Corp.</td>
+            <td>카카오 알림톡 메시징 인프라</td>
+            <td>알림톡 수신자 휴대전화번호, 메시지 본문</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>8. 이용자의 권리와 행사 방법</h2>
+      <p>이용자는 언제든지 다음의 권리를 행사할 수 있습니다:</p>
+      <ul>
+        <li>개인정보 열람, 정정, 삭제 요구</li>
+        <li>개인정보 처리 정지 요구</li>
+        <li>회원 탈퇴 및 계정 삭제 요청</li>
+        <li>카카오 알림톡 수신 거부</li>
+      </ul>
+      <p style="margin-top: 12px;">상기 권리 행사는 앱 내 설정 메뉴 또는 이메일(junhui1121@gmail.com)을 통해 요청 가능합니다.</p>
+    </section>
+
+    <section>
+      <h2>9. 개인정보의 파기 절차 및 방법</h2>
+      <ul>
+        <li>보유 기간이 경과한 정보는 내부 방침에 따라 지체 없이 파기합니다.</li>
+        <li>전자적 파일 형태는 복구 불가능한 기술적 방법으로 삭제합니다.</li>
+        <li>종이 기록은 분쇄하거나 소각합니다.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>10. 개인정보 보호를 위한 기술적·관리적 조치</h2>
+      <ul>
+        <li>비밀번호는 일방향 암호화(해시)하여 저장하며, 평문으로 저장·전송하지 않습니다.</li>
+        <li>모든 통신은 HTTPS(TLS)로 암호화됩니다.</li>
+        <li>Supabase Row Level Security(RLS)를 통해 학원별 데이터 격리를 보장합니다.</li>
+        <li>개인정보 처리자를 최소한으로 제한하고 접근 권한을 관리합니다.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>11. 아동의 개인정보 보호</h2>
+      <p>회사는 만 14세 미만 아동에 대해서는 법정대리인의 동의 없이 개인정보를 수집·이용하지 않습니다. 학원에 등록되는 학생(미성년 포함)의 정보는 해당 학원과 학부모의 동의하에 원장·선생님이 입력하며, 회사는 이를 학원 운영 목적으로만 처리합니다.</p>
+    </section>
+
+    <section>
+      <h2>12. 개인정보 보호 책임자</h2>
+      <table>
+        <tbody>
+          <tr><th style="width: 130px;">책임자</th><td>안준성 (h2tech 대표)</td></tr>
+          <tr><th>연락처</th><td>010-3180-1322</td></tr>
+          <tr><th>이메일</th><td>junhui1121@gmail.com</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top: 12px;">개인정보 관련 문의, 고충처리, 피해구제 등은 위 연락처로 요청해 주시기 바랍니다.</p>
+    </section>
+
+    <section>
+      <h2>13. 권익침해 구제 방법</h2>
+      <p>개인정보 침해로 인한 상담 및 신고는 아래 기관에 문의할 수 있습니다:</p>
+      <ul>
+        <li>개인정보분쟁조정위원회: 1833-6972 (<a href="https://www.kopico.go.kr" target="_blank">www.kopico.go.kr</a>)</li>
+        <li>개인정보침해신고센터: (국번없이) 118 (<a href="https://privacy.kisa.or.kr" target="_blank">privacy.kisa.or.kr</a>)</li>
+        <li>대검찰청 사이버수사과: (국번없이) 1301 (<a href="https://www.spo.go.kr" target="_blank">www.spo.go.kr</a>)</li>
+        <li>경찰청 사이버수사국: (국번없이) 182 (<a href="https://ecrm.cyber.go.kr" target="_blank">ecrm.cyber.go.kr</a>)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>14. 개정 고지</h2>
+      <p>본 방침은 시행일로부터 적용되며, 법령·정책 변경 또는 서비스의 변동에 따라 개정될 수 있습니다. 개정 시 적용 7일 전부터 본 페이지 상단에 개정 사실을 공지합니다.</p>
+    </section>
+
+    <footer>
+      © 2026 h2tech · 사업자번호 107-34-20995<br>
+      전북 전주시 덕진구 기린대로 945-6, 207호
+    </footer>
+  </div>
+</body>
+</html>
