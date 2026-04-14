@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>하크루 · 계정 및 데이터 삭제 요청</title>
+  <meta name="description" content="하크루 앱 계정 삭제 및 개인 데이터 삭제 요청 방법 안내">
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --danger: #DC2626;
+      --text: #1F2937;
+      --text-secondary: #6B7280;
+      --border: #E5E7EB;
+      --bg: #F9FAFB;
+      --surface: #FFFFFF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 64px; height: 64px;
+      background: var(--primary); color: white;
+      border-radius: 16px; font-size: 28px; font-weight: 900;
+      margin-bottom: 12px;
+    }
+    h1 { font-size: 22px; font-weight: 900; }
+    .subtitle { color: var(--text-secondary); font-size: 14px; margin-top: 4px; }
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-size: 16px; font-weight: 800;
+      color: var(--primary); margin-bottom: 10px;
+    }
+    p, li { font-size: 14px; margin-bottom: 6px; }
+    ul { padding-left: 20px; }
+    .step {
+      background: var(--bg);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin: 6px 0;
+      font-size: 13px;
+    }
+    .highlight {
+      background: #EEF2FF;
+      border-left: 3px solid var(--primary);
+      padding: 12px 16px;
+      margin: 12px 0;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+    .cta {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 12px;
+    }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 13px; }
+    th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; }
+    th { background: var(--bg); font-weight: 700; }
+    footer { text-align: center; color: var(--text-secondary); font-size: 12px; margin-top: 32px; }
+    a { color: var(--primary); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">H</div>
+      <h1>계정 및 데이터 삭제 요청</h1>
+      <div class="subtitle">하크루 (Hakrew) · Account Deletion Request</div>
+    </header>
+
+    <section>
+      <h2>개요</h2>
+      <p>하크루 이용자는 언제든지 본인의 계정과 개인 데이터 삭제를 요청할 수 있습니다. 본 페이지의 안내에 따라 삭제 요청을 진행해 주세요.</p>
+    </section>
+
+    <section>
+      <h2>① 이메일로 삭제 요청</h2>
+      <p>아래 이메일로 삭제 요청 메일을 보내주시면, 영업일 기준 7일 이내에 처리됩니다.</p>
+
+      <div class="step">
+        <strong>수신:</strong> junhui1121@gmail.com<br>
+        <strong>제목:</strong> [하크루] 계정 삭제 요청<br>
+        <strong>본문 포함 내용:</strong>
+        <ul style="margin-top:6px;">
+          <li>가입 시 사용한 이메일</li>
+          <li>본인 확인용 휴대전화 번호 (끝 4자리)</li>
+          <li>삭제 요청 사유 (선택)</li>
+        </ul>
+      </div>
+
+      <a class="cta" href="mailto:junhui1121@gmail.com?subject=%5B%ED%95%98%ED%81%AC%EB%A3%A8%5D%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">이메일로 삭제 요청하기</a>
+    </section>
+
+    <section>
+      <h2>② 삭제되는 데이터</h2>
+      <table>
+        <thead>
+          <tr><th>항목</th><th>삭제 여부</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>계정 정보 (이메일, 이름, 전화번호)</td><td>즉시 삭제</td></tr>
+          <tr><td>프로필 사진</td><td>즉시 삭제</td></tr>
+          <tr><td>비밀번호 해시</td><td>즉시 삭제</td></tr>
+          <tr><td>본인이 작성한 공지, 상담 기록 등</td><td>익명 처리 후 유지 (학원 운영 데이터)</td></tr>
+          <tr><td>세션 로그 / 접속 IP</td><td>자동 파기 (최대 3개월)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>③ 데이터 일부만 삭제 요청</h2>
+      <p>계정 전체가 아니라 특정 정보만 삭제를 원하시면 이메일에 구체적인 항목을 명시해 주세요:</p>
+      <ul>
+        <li>프로필 사진만 삭제</li>
+        <li>휴대전화번호 삭제 (알림톡 수신 중단)</li>
+        <li>특정 학생/학부모 정보 삭제 (학원 원장 권한 필요)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>④ 법령에 따른 보관 기간</h2>
+      <p>아래 항목은 관계 법령에 따라 삭제 요청 후에도 일정 기간 보관될 수 있습니다:</p>
+      <table>
+        <thead>
+          <tr><th>항목</th><th>보관 기간</th><th>근거</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>출결·수강료 기록</td><td>5년</td><td>상법</td></tr>
+          <tr><td>부정 이용 기록</td><td>1년</td><td>서비스 보호</td></tr>
+          <tr><td>접속 로그</td><td>3개월</td><td>통신비밀보호법</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>⑤ 문의</h2>
+      <div class="highlight">
+        <strong>개인정보 보호 책임자</strong><br>
+        안준성 (h2tech 대표)<br>
+        이메일: junhui1121@gmail.com<br>
+        전화: 010-3180-1322
+      </div>
+      <p>전체 개인정보처리방침은 <a href="privacy.html">여기</a>에서 확인할 수 있습니다.</p>
+    </section>
+
+    <footer>
+      © 2026 h2tech · 사업자번호 107-34-20995
+    </footer>
+  </div>
+</body>
+</html>
