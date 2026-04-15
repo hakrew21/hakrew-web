@@ -3,7 +3,7 @@
     "short_name": "하크루",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#4F46E5",
+    "background_color": "#0B0D13",
     "theme_color": "#4F46E5",
     "description": "학원 원장·선생님·학부모를 하나로 잇는 통합 관리 앱",
     "orientation": "portrait-primary",
